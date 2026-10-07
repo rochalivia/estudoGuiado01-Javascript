@@ -15,7 +15,7 @@ Repositório de estudos de JavaScript, criado por Lívia Helena, com foco em ló
 - Matrizes e acesso por `[linha][coluna]`
 - Funções com parâmetros e `return`
 - Laços `for` aninhados com `length`
-- 
+
  ## Como rodar
 
 Com o Node instalado, execute:
