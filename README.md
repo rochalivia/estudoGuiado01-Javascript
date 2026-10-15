@@ -6,7 +6,7 @@ Repositório de estudos de JavaScript, criado por Lívia Helena, com foco em ló
 - 💄 **Exercício 00 | Necessaire de maquiagem**: matriz em que cada linha é um produto e cada coluna é um dado dele.
 - 🐱 **Exercício 01 | Magrelinha**: variáveis (`const` e `let`), tipos primitivos e arrays simples.
 - 🎧 **Exercício 02 | Playlist de estudo**: função que monta a linha, `push` para guardar na matriz e laço duplo para percorrer tudo.
-- 📓 **Exercício 03 | Tratamento de Dados**: Conversão de dados. Utilização de comandos prompt, alert e confirm. Primeiros passos com DOM em document.getElementById e textContent
+- 📓 **Exercício 03 | Tratamento de Dados**: Conversão de dados. Utilização de comandos `prompt`, `alert` e `confirm`. Primeiros passos com DOM em `document.getElementById` e `textContent`
 
 ## Conceitos praticados
 
