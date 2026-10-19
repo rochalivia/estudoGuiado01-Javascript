@@ -1,4 +1,4 @@
-# 💜 Estudos de JavaScript: Variáveis, Arrays e Matrizes
+# 💜 Estudos de JavaScript :3
 
 Repositório de estudos de JavaScript, criado por Lívia Helena, com foco em lógica de programação. Cada exercício modela algo do mundo real em código.
 
@@ -7,6 +7,7 @@ Repositório de estudos de JavaScript, criado por Lívia Helena, com foco em ló
 - 🐱 **Exercício 01 | Magrelinha**: variáveis (`const` e `let`), tipos primitivos e arrays simples.
 - 🎧 **Exercício 02 | Playlist de estudo**: função que monta a linha, `push` para guardar na matriz e laço duplo para percorrer tudo.
 - 📓 **Exercício 03 | Tratamento de Dados**: Conversão de dados. Utilização de comandos `prompt`, `alert` e `confirm`. Primeiros passos com DOM em `document.getElementById` e `textContent`
+- 🌳 **Exercício 04 | Primeiros passos com DOM**: Adicionando elementos html através do DOM com comandos `getElement...` e `querySelector`
 
 ## Conceitos praticados
 
