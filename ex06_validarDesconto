@@ -1,0 +1,19 @@
+const formulario = document.querySelector('form#formulario')
+const desconto = document.querySelector('input#desconto')
+const texto = document.querySelector('ul#textoElemento')
+
+formulario.addEventListener('submit', verificarDesconto)
+
+function verificarDesconto(event) {
+
+    event.preventDefault()
+    if (desconto.value.toUpperCase() === "PROMO10") {
+        const parabensDesconto = document.createElement('li')
+        parabensDesconto.textContent = 'Parabéns você recebeu 20% de desconto! Aproveite :D'
+        texto.appendChild(parabensDesconto)
+    } else {
+        const cupomInvalido = document.createElement('li')
+        cupomInvalido.textContent = 'Tente novamente, cupom inválido'
+        texto.appendChild(cupomInvalido)
+    }
+}
