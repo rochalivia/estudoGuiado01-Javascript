@@ -1,0 +1,21 @@
+///Pedir a idade de uma pessoa e validar sua maiordade
+const idade = document.querySelector('input#idade')
+const formulario = document.querySelector('form#formulario')
+const texto = document.querySelector('ul#textoElemento')
+
+formulario.addEventListener('submit', validarIdade)
+
+function validarIdade(event) {
+    event.preventDefault()
+
+    if (Number(idade.value) >= 18) {
+        const textoMaiorIdade = document.createElement('li')
+        textoMaiorIdade.textContent = 'Você é maior de Idade!!!'
+        texto.appendChild(textoMaiorIdade)
+    } else {
+        const textoMenorIdade = document.createElement('li')
+        textoMenorIdade.textContent = 'Você é menor de Idade!!!'
+        texto.appendChild(textoMenorIdade)
+
+    }
+}
