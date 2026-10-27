@@ -1,0 +1,37 @@
+const formulario = document.querySelector('form#formulario')
+const diaSemana = document.querySelector('input#diaSemana')
+const texto = document.querySelector('li#textoElemento')
+
+formulario.addEventListener('submit', validadorSemanal)
+
+function validadorSemanal(event) {
+    event.preventDefault()
+
+    switch (Number(diaSemana.value)) {
+        case 1:
+            texto.textContent = 'Domingo'
+            break;
+        case 2:
+            texto.textContent = 'Segunda'
+            break;
+        case 3:
+            texto.textContent = 'Terça'
+            break;
+        case 4:
+            texto.textContent = 'Quarta'
+            break;
+        case 5:
+            texto.textContent = 'Quinta'
+            break;
+        case 6:
+            texto.textContent = 'Sexta'
+            break;
+        case 7:
+            texto.textContent = 'Sábado'
+            break;
+
+
+        default:
+            texto.textContent = 'Mensagem de erro: Valor inadequado'
+    }
+}
