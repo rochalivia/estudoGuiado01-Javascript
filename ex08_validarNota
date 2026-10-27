@@ -1,0 +1,25 @@
+///As notas só são válidas se estiverem entre 0 e 10, caso contrário será exibido uma mensagem de erro. Se a nota for menor que 7 está reprovado, se for maior ou igual a 7 está aprovado.
+const formulario = document.querySelector('form#formulario')
+const nota = document.querySelector('input#nota')
+const textoElemento = document.querySelector('ul#textoElemento')
+
+formulario.addEventListener('submit', validarNota)
+
+function validarNota(event) {
+    event.preventDefault()
+    if (Number(nota.value) < 0 || Number(nota.value) > 10) {
+
+        const mensagemErro = document.createElement('li')
+        mensagemErro.textContent = 'Mensagem de erro: Nota inválida'
+        textoElemento.appendChild(mensagemErro)
+    } else if (Number(nota.value) >= 7) {
+        const notaValida = document.createElement('li')
+        notaValida.textContent = 'Você foi...APROVADOOOO!!!!'
+        textoElemento.appendChild(notaValida)
+    } else {
+        const notaReprovada = document.createElement('li')
+        notaReprovada.textContent = 'Que pena, você foi reprovado :('
+        textoElemento.appendChild(notaReprovada)
+    }
+
+} 
