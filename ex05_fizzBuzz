@@ -1,0 +1,33 @@
+const formulario = document.querySelector('form#formulario')
+const numero = document.querySelector('input#numero')
+const textoElemento = document.querySelector('ul#textoElemento')
+
+formulario.addEventListener('submit', fizzBuzz)
+
+function fizzBuzz(event) {
+    event.preventDefault()
+
+    if ((Number(numero.value) % 3) == 0 && (Number(numero.value) % 5) == 0) {
+        const multiploTresCinco = document.createElement('li')
+        multiploTresCinco.textContent = 'FizzBuzz'
+        textoElemento.appendChild(multiploTresCinco)
+
+    } else if ((Number(numero.value) % 3) == 0) {
+
+        const multiploTres = document.createElement('li')
+        multiploTres.textContent = 'Fizz'
+        textoElemento.appendChild(multiploTres)
+
+    }
+
+    else if ((Number(numero.value) % 5) == 0) {
+        const multiploCinco = document.createElement('li')
+        multiploCinco.textContent = 'Buzz'
+        textoElemento.appendChild(multiploCinco)
+
+    } else {
+        const qualquerNumero = document.createElement('li')
+        qualquerNumero.textContent = Number(numero.value)
+        textoElemento.appendChild(qualquerNumero)
+    }
+}
