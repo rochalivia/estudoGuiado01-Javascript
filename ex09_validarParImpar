@@ -1,0 +1,21 @@
+/// Validar se um número é par ou impar
+const formulario = document.querySelector('form#formulario')
+const numero = document.querySelector('input#numero')
+const textoElemento = document.querySelector('ul#textoElemento')
+
+formulario.addEventListener('submit', validarParImpar)
+
+function validarParImpar(event) {
+    event.preventDefault()
+
+    if (Number(numero.value) % 2 == 0) {
+        const textoPar = document.createElement('li')
+        textoPar.textContent = 'O número escolhido é Par'
+        textoElemento.appendChild(textoPar)
+
+    } else {
+        const textoImpar = document.createElement('li')
+        textoImpar.textContent = 'O número escolhido é Impar'
+        textoElemento.appendChild(textoImpar)
+    }
+}
