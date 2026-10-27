@@ -1,0 +1,21 @@
+const formulario = document.querySelector('form#formulario')
+
+formulario.addEventListener('submit', tabuada)
+
+function tabuada(event) {
+    event.preventDefault()
+    let numero = document.querySelector('input#numero')
+    let textoElemento = document.querySelector('ul#textoElemento')
+    let n = Number(numero.value)
+
+    textoElemento.innerHTML = ''
+
+
+    for(let i = 0; i <= 10; i++) {
+        let resultado = n*i
+
+        let texto = document.createElement('li')
+        texto.textContent = `${n} X ${i} = ${resultado}`
+        textoElemento.appendChild(texto)
+    }
+}
